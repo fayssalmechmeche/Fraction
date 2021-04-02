@@ -1,13 +1,15 @@
 package Fraction;
 
+import java.io.OutputStream;
+
 public class Fraction{
 
-    private int denominateur=10;
+    private int denominateur=2;
     
-    private int numerateur=10;
-    private int numerateur2=5;
+    private int numerateur=1;
+    private int numerateur2=10;
     
-    private int pgcd;
+  
     
     
     
@@ -34,6 +36,34 @@ public String setMultiplication() {
     String resultat = numerateur2*numerateur   + "/"+ denominateur*denominateur;
     return resultat; 
 }
+public String setDivision() {
+	String resultat = numerateur * denominateur +"/"+ denominateur * numerateur2;
+	return resultat;
+}
+
+public void setPGCD() {
+	 
+	 while (numerateur != denominateur) { // on fait 
+	       if(numerateur > denominateur)
+	             numerateur = numerateur - denominateur;
+	       else
+	             denominateur = denominateur - numerateur;
+	     }
+	           
+ System.out.printf("PGCD = %d", denominateur);
+ }
+public void setPGCD2() {
+	 
+	 while (numerateur2 != denominateur) { // on fait 
+	       if(numerateur2 > denominateur)
+	             numerateur2 = numerateur2 - denominateur;
+	       else
+	             denominateur = denominateur - numerateur2;
+	     }
+	           
+System.out.printf("PGCD = %d", denominateur);
+}
+
 public int getNumerateur() {
     return this.numerateur;
 }

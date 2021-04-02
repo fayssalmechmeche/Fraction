@@ -18,5 +18,10 @@ public class test {
 		System.out.println("addition"+fraction.setAddtion());
 		System.out.println("soustraction"+fraction.setSoustraction());
 		System.out.println("multiplication"+fraction.setMultiplication());
+		fraction2.setPGCD();
+		System.out.println("\n");
+		fraction2.setPGCD2();
+		System.out.println("\n");
+		System.out.println("multiplication"+fraction.setDivision());
 	}
 }
